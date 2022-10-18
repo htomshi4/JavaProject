@@ -63,6 +63,12 @@ public class HR extends Person {
     public HR(){
         
     }
+    @Override
+    public String toString() {
+        return """
+               HR
+               Name:""" + super.name + "\naddress:" + super.address + "\njob_title:" + super.job_title + "\ndepartement:" + super.departement + "\nsalary:" + super.salary ;
+    }
     
     public boolean edit_employee (Employee s){
         
