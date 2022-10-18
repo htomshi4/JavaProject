@@ -12,6 +12,11 @@ class Person {
     String name,address,job_title,departement;
     double salary;
 
+    @Override
+    public String toString() {
+        return "Person{" + "name=" + name + ", address=" + address + ", job_title=" + job_title + ", departement=" + departement + ", salary=" + salary + '}';
+    }
+
     public double getSalary() {
         return salary;
     }
