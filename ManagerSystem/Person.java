@@ -8,68 +8,71 @@ package ManagerSystem;
  *
  * @author mexawo3tebi
  */
-class Person {
-    String name,address,job_title,departement;
-    double salary;
+public class HR extends Person {
 
-    @Override
-    public String toString() {
-        return "Person{" + "name=" + name + ", address=" + address + ", job_title=" + job_title + ", departement=" + departement + ", salary=" + salary + '}';
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     public double getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    public Person(String name, String address, String job_title, String departement, double salary) {
-        this.name = name;
-        this.address = address;
-        this.job_title = job_title;
-        this.departement = departement;
-        this.salary = salary;
-    }
-    
-  
-    
-
-    void setName(String name) {
+    @Override
+    public void setName(String name) {
         this.name = name;
     }
 
-    void setAddress(String address) {
+    @Override
+    public void setAddress(String address) {
         this.address = address;
     }
 
-    void setJob_title(String job_title) {
+    @Override
+    public void setJob_title(String job_title) {
         this.job_title = job_title;
     }
 
-    void setDepartement(String departement) {
+    @Override
+    public void setDepartement(String departement) {
         this.departement = departement;
     }
 
-    String getName() {
+    @Override
+    public String getName() {
         return name;
     }
 
-    String getAddress() {
+    @Override
+    public String getAddress() {
         return address;
     }
-
-    String getJob_title() {
+    @Override
+    public String getJob_title() {
         return job_title;
     }
-
-    String getDepartement() {
+    @Override
+    public String getDepartement() {
         return departement;
     }
-    Person(){
-        
+
+    public HR(String name, String address, String job_title, String departement, double salary) {
+        super(name, address, job_title, departement, salary);
     }
 
+    public HR(){
+        
+    }
+    @Override
+    public String toString() {
+        return """
+               HR
+               Name:""" + super.name + "\naddress:" + super.address + "\njob_title:" + super.job_title + "\ndepartement:" + super.departement + "\nsalary:" + super.salary ;
+    }
     
+    public boolean edit_employee (Employee s){
+        
+        return false;
+        
+    }
 }
