@@ -9,6 +9,13 @@ package ManagerSystem;
  * @author mexawo3tebi
  */
 public class Employee extends Person {
+
+    @Override
+    public String toString() {
+        return """
+               Employee
+               Name:""" + super.name + "\naddress:" + super.address + "\njob_title:" + super.job_title + "\ndepartement:" + super.departement + "\nsalary:" + super.salary ;
+    }
     
     @Override
     public void setName(String name) {
