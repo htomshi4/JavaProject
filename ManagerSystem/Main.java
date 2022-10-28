@@ -17,7 +17,9 @@ public class Main {
 
     public static void main(String[] args) {
         
-      
+
+       
+       
         Employee [] worker = new Employee[100];
         HR [] hr_manager = new HR[100];
         
@@ -26,7 +28,7 @@ public class Main {
         //boolean is_load_employee = loadEmployee(worker);
         //if (is_load_hr && is_load_employee)
         worker[0] = new Employee("hatim","khobar","CS","A",1000);
-        
+        hr_manager[0] = new HR("faisel","khobar","HR","HR",1000);
         
         
         System.out.print(worker[0].toString());
