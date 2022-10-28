@@ -17,40 +17,32 @@ public class Employee extends Person {
                Name:""" + super.name + "\naddress:" + super.address + "\njob_title:" + super.job_title + "\ndepartement:" + super.departement + "\nsalary:" + super.salary ;
     }
     
-    @Override
     public void setName(String name) {
         this.name = name;
     }
 
-    @Override
     public void setAddress(String address) {
         this.address = address;
     }
 
-    @Override
     public void setJob_title(String job_title) {
         this.job_title = job_title;
     }
 
-    @Override
     public void setDepartement(String departement) {
         this.departement = departement;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
     public String getAddress() {
         return address;
     }
-    @Override
     public String getJob_title() {
         return job_title;
     }
-    @Override
     public String getDepartement() {
         return departement;
     }
@@ -59,6 +51,7 @@ public class Employee extends Person {
         super(name, address, job_title, departement, salary);
     }
 
+    
     @Override
     public double getSalary() {
         return salary;
