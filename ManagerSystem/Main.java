@@ -17,7 +17,10 @@ public class Main {
 
     public static void main(String[] args) {
         
-      
+        int user_id;
+        
+       
+       
         Employee [] worker = new Employee[100];
         HR [] hr_manager = new HR[100];
         
@@ -25,8 +28,8 @@ public class Main {
         //boolean is_load_hr =loadHr(hr_manager);
         //boolean is_load_employee = loadEmployee(worker);
         //if (is_load_hr && is_load_employee)
-        worker[0] = new Employee("hatim","khobar","CS","A",1000);
-        
+        worker[0] = new Employee("hatim","khobar","CS","A",1000,1);
+        hr_manager[0] = new HR("faisel","khobar","HR","HR",1000,2);
         
         
         System.out.print(worker[0].toString());
@@ -50,7 +53,7 @@ public class Main {
     while ((strLine = br.readLine()) != null)   {
        String[] tokens = strLine.split(" ");
        double salary = Double.parseDouble(tokens[4]);  
-       workers[counter] = new HR(tokens[0],tokens[1],tokens[2],tokens[3],salary);
+       workers[counter] = new HR(tokens[0],tokens[1],tokens[2],tokens[3],salary,4);
        counter+=1;
        
     }
@@ -76,7 +79,7 @@ public class Main {
     while ((strLine = br.readLine()) != null)   {
        String[] tokens = strLine.split(" ");
        double salary = Double.parseDouble(tokens[4]);  
-       workers[counter] = new Employee(tokens[0],tokens[1],tokens[2],tokens[3],salary);
+       workers[counter] = new Employee(tokens[0],tokens[1],tokens[2],tokens[3],salary,4);
        counter+=1;
        
     }
